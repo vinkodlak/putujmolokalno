@@ -1,17 +1,28 @@
 import React from "react"
-import PropTypes from "prop-types"
+import styled from 'styled-components'
 
 import "../style/style.scss"
 
-const Layout = ({ children }) => {
+const Layout = styled.div`
+  display: grid;
+  grid-template-columns: var(--mainGrid);
+
+  &>* {
+    grid-column: 2 / -2;
+  }
+
+  &>.full {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: var(--mainGrid);
+  }
+`
+
+export default ({ children }) => {
 
   return (
-    <div></div>
+    <Layout>
+      {children}
+    </Layout>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
