@@ -1,5 +1,5 @@
 import React from 'react'
-import Select, { components } from 'react-select'
+import Select from 'react-select'
 
 const customRadius = {
   left: '10px 0 0 10px',

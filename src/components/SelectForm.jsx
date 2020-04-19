@@ -1,28 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import Select from './Select'
+import YellowButton from './YellowButton'
 
 const SelectForm = styled.div`
   display: flex;
 `
 
-const Button = styled.button`
-  min-width: 269px;
-  background-image: linear-gradient(to right, #ffb001, #fcc319);
-  border: 0;
-  border-radius: 0 10px 10px 0;
-  font: 700 20px/1.2 var(--Lato);
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
-  transition: box-shadow 0.15s; 
+const Button = styled(YellowButton)`
 
-  &:hover {
-    box-shadow: 
-      0 3px 6px 0 rgba(0,0,0,0.16),
-      0 3px 6px 0 rgba(0,0,0,0.16);
-  }
 `
 
 export default ({className}) => {
