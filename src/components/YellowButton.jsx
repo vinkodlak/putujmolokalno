@@ -20,9 +20,9 @@ const Button = styled.button`
   }
 `
 
-export const YellowButton = ({ children }) => {
+export const YellowButton = ({ children, className }) => {
   return (
-    <Button>
+    <Button className={className}>
       {children}
     </Button>
   )

@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Select from './Select'
-import YellowButton from './YellowButton'
+import { YellowButton } from './YellowButton'
 
 const SelectForm = styled.div`
   display: flex;
 `
 
 const Button = styled(YellowButton)`
-
+  border-radius: 0 10px 10px 0;
 `
 
 export default ({className}) => {
