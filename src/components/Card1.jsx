@@ -7,6 +7,8 @@ const StyledCard = styled.article`
   width: 269px;
   height: 444px;
   position: relative;
+
+  margin-right: 30px;
 `
 const Category = styled.header`
   font: 400 16px/21px var(--serif);

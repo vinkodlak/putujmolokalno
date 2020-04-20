@@ -1,11 +1,13 @@
 :root {
   --mainGrid: 1fr 1124px 1fr;
   --innerGrid: repeat(24, 1fr);
-  --innerGridGap: 16px;
+  --innerGridGap: 8px;
 
   --serif: "Playfair Display", "Arial", sans-serif;
   --sans: 'Open Sans', "Times New Roman", serif;
   
+  --orange: #ffb001;
+
   --shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
 }
 

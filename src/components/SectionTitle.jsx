@@ -17,9 +17,9 @@ const Title = styled.h2`
   }
 `
 
-export const SectionTitle = ({ children }) => {
+export const SectionTitle = ({ children, className }) => {
   return (
-    <Title>
+    <Title className={className}>
       {children}
     </Title>
   )
