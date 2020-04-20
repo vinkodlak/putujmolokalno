@@ -9,6 +9,7 @@ const SelectForm = styled.div`
 `
 
 const Button = styled(YellowButton)`
+  min-width: 269px;
   border-radius: 0 10px 10px 0;
 `
 
@@ -40,7 +41,7 @@ export default ({className}) => {
         placeholder={`Biraj Doživljaj`}
       />
 
-      <Button>Istraži</Button>
+      <Button isHero>Istraži</Button>
 
     </SelectForm>
   )
