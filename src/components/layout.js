@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import "../style/style.scss"
 
+import { Header } from './Header'
+
 const Layout = styled.div`
   display: grid;
   grid-template-columns: var(--mainGrid);
@@ -21,8 +23,11 @@ const Layout = styled.div`
 export default ({ children }) => {
 
   return (
-    <Layout>
-      {children}
-    </Layout>
+    <>
+      <Header />
+      <Layout>
+        {children}
+      </Layout>
+    </>
   )
 }
