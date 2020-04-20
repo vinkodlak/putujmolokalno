@@ -6,7 +6,7 @@ import Select from './SelectForm'
 const Hero = styled.div`
   background: #d5d5d5;
   color: #fff;
-  font-family: var(--PlayfairDisplay);
+  font-family: var(--serif);
 
   &>* {
     grid-column: 2 / -2;
@@ -23,7 +23,6 @@ const Slogan = styled.div`
   font-size: 32px;
   margin-bottom: 40px;
   line-height: 1.34;
-  max-width: 579px;
 `
 
 const StyledSelect = styled(Select)`
