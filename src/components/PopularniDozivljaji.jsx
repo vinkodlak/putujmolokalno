@@ -5,10 +5,31 @@ import Flickity from 'react-flickity-component'
 import { SectionTitle } from './SectionTitle'
 import { Card } from './Card1'
 import { ArrowButton } from './ArrowButton'
+import BgImage from '../images/tilted-bg.inline.svg'
+
+
 
 
 const Section = styled.section`
   margin-bottom: 75px;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 355px;
+    width: 100%;
+    z-index: 0;
+    padding-bottom: 50%;
+    background: url(${BgImage});
+    background-size: cover;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+  }
 `
 
 const TitleWithButtons = styled.div`
