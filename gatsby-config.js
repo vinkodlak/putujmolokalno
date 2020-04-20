@@ -16,7 +16,7 @@ module.exports = {
             subsets: ['latin-ext']
           },
           {
-            family: `Lato`,
+            family: `Open Sans`,
             variants: [`400`, `700`],
             subsets: ['latin-ext']
           }

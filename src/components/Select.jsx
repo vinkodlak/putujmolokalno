@@ -28,12 +28,12 @@ export default props => {
         }),
         placeholder: base => ({
           ...base,
-          font: '400 20px/1.2 var(--Lato)',
+          font: '400 20px/1.2 var(--sans)',
           color: '#00003b'
         }),
         singleValue: base => ({
           ...base,
-          font: '400 20px/1.2 var(--Lato)',
+          font: '400 20px/1.2 var(--sans)',
           color: '#00003b'
         }),
         valueContainer: base => ({
@@ -42,7 +42,7 @@ export default props => {
         }),
         option: base => ({
           ...base,
-          font: '400 20px/1.2 var(--Lato)',
+          font: '400 20px/1.2 var(--sans)',
           color: '#00003b'
         })
       }}

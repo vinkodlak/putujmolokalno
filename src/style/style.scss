@@ -1,8 +1,12 @@
 :root {
   --mainGrid: 1fr 1124px 1fr;
+  --innerGrid: repeat(24, 1fr);
+  --innerGridGap: 16px;
 
-  --PlayfairDisplay: PlayfairDisplay;
-  --Lato: Lato;
+  --serif: "Playfair Display", "Arial", sans-serif;
+  --sans: 'Open Sans', "Times New Roman", serif;
+  
+  --shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
 }
 
 html, body {
