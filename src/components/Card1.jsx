@@ -11,7 +11,7 @@ const StyledCard = styled.article`
   margin-right: 30px;
 `
 const Category = styled.header`
-  font: 400 16px/21px var(--serif);
+  font: var(--serif16);
   color: #fff;
   background-image: linear-gradient(to bottom, #0886a3, #0099bd);
   padding: 15px 20px;
@@ -28,7 +28,7 @@ const Meta = styled.main`
   height: 132px;
   bottom: 0;
   border-radius: 0 0 10px 10px;
-  font: 400 16px/19px var(--sans);
+  font: var(--sans16);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

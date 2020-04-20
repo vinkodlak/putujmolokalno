@@ -23,7 +23,7 @@ const Article = styled.article`
   }
 
   p {
-    font: 400 16px/1.19 var(--sans);
+    font: var(--sans16);
     margin-bottom: 47px;
   }
 
