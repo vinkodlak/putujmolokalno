@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Flickity from 'react-flickity-component'
 
-import { SectionTitle } from './SectionTitle'
-import { Card } from './Card1'
+import { SectionTitleWithButtons } from './SectionTitleWithButtons'
 import { ArrowButton } from './ArrowButton'
+import { Card } from './Card1'
 import BgImage from '../images/tilted-bg.inline.svg'
 
 import { cards } from '../../content/cards'
@@ -32,24 +32,14 @@ const Section = styled.section`
   }
 `
 
-const TitleWithButtons = styled.div`
+const StyledSectionTitleWithButtons = styled(SectionTitleWithButtons)`
   grid-column: 2 / -2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 `
 
-const StyledSectionTitle = styled(SectionTitle)`
-  grid-column: 1;
-`
 const StyledFlickity = styled(Flickity)`
   grid-column: 1 / -1;
   overflow: hidden;
   outline: none;
-`
-
-const Buttons = styled.div`
-  grid-column: 2;
-  justify-self: end;
 `
 export class PopularniDozivljaji extends React.Component {
   customPrev = () => {
@@ -62,15 +52,12 @@ export class PopularniDozivljaji extends React.Component {
   render() {
     return (
       <Section className="full">
-        <TitleWithButtons>
-          <StyledSectionTitle>Popularni doživljaji</StyledSectionTitle>
-
-          <Buttons>
-            <ArrowButton onClick={this.customPrev} />
-            <ArrowButton isRight onClick={this.customNext} />
-          </Buttons>
-
-        </TitleWithButtons>
+        <StyledSectionTitleWithButtons
+          prev={this.customPrev}
+          next={this.customNext}
+        >
+          Popularni doživljaji
+        </StyledSectionTitleWithButtons>
 
         <StyledFlickity
           flickityRef={c => this.flkty = c}
