@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import "../style/style.scss"
 
 import { Header } from './Header'
+import { Footer } from './Footer'
 
 const Layout = styled.div`
   display: grid;
@@ -28,6 +29,7 @@ export default ({ children }) => {
       <Layout>
         {children}
       </Layout>
+      <Footer />
     </>
   )
 }
