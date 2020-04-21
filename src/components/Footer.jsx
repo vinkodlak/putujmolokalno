@@ -83,7 +83,7 @@ export const Footer = () => {
           <MenuTitle>Pratite nas</MenuTitle>
           <SocialLinks>
             {social.map((item, index) => (
-              <SocialItem href={item.link} target="_blank" rel="noopener noreferrer"><img src={item.icon} alt="" /></SocialItem>
+              <SocialItem key={index} href={item.link} target="_blank" rel="noopener noreferrer"><img src={item.icon} alt="" /></SocialItem>
             ))}
           </SocialLinks>
         </Social>
