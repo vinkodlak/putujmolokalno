@@ -35,11 +35,16 @@ const Menu = styled.ul`
 const MenuLink = styled.li`
   text-transform: uppercase;
   margin-top: 25px;
-  cursor: pointer;
-  pointer-events: initial;
 
   &:not(:last-of-type) {
     margin-right: 40px;
+  }
+
+  span {
+    cursor: pointer;
+    pointer-events: initial;
+    display: block;
+
   }
 `
 
@@ -51,9 +56,9 @@ export const Header = () => {
           <Link to={`/`}><img src={'/images/Travel-Advisor-Logo.png'} alt="" /></Link>
         </Logo>
         <Menu>
-          <MenuLink>Putovanja</MenuLink>
-          <MenuLink>Hrana & vino</MenuLink>
-          <MenuLink>Kupanje</MenuLink>
+          <MenuLink><span>Putovanja</span></MenuLink>
+          <MenuLink><span>Hrana & vino</span></MenuLink>
+          <MenuLink><span>Kupanje</span></MenuLink>
         </Menu>
       </HeaderWrap>
     </StyledHeader>
