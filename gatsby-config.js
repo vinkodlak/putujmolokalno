@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `#putujmolokalno`,
+    title: `Upoznaj Hrvatsku`,
     description: `Spremni za putovanje, čim korona stane`,
     author: `@vinkodlak`,
   },
