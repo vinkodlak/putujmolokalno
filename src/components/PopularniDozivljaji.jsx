@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Flickity from 'react-flickity-component'
 
 import { SectionTitleWithButtons } from './SectionTitleWithButtons'
-import { ArrowButton } from './ArrowButton'
 import { Card } from './Card1'
 import BgImage from '../images/tilted-bg.inline.svg'
 
